@@ -1,0 +1,42 @@
+# Algorithms every software engineer should know
+
+- Big O / time-space complexity — standard notation for describing algorithm performance in terms of input size.  
+- Linear search — scan items sequentially to find a target.  
+- Binary search — search a sorted array by repeatedly halving the search interval.  
+- Bubble sort — simple O(n^2) comparison sort that repeatedly swaps adjacent out-of-order elements.  
+- Selection sort — O(n^2) sort that repeatedly selects the min/max and places it in order.  
+- Insertion sort — O(n^2) stable sort that builds a sorted prefix by inserting elements one-by-one.  
+- Merge sort — divide-and-conquer O(n log n) stable sort that merges sorted halves.  
+- Quick sort — divide-and-conquer average O(n log n) in-place sort using pivot partitioning.  
+- Heap sort — O(n log n) sort using a binary heap to repeatedly extract the max/min.  
+- Counting sort — O(n + k) non-comparison sort for small integer ranges.  
+- Radix sort — non-comparative multi-pass integer/string sort using digit positions.  
+- Hashing / hash table operations — average O(1) insert/lookup using key hashing with collision handling.  
+- Two pointers technique — use two indices to solve array/string problems in linear time.  
+- Sliding window technique — maintain a dynamic window over a sequence for subarray/subsequence problems.  
+- Depth-first search (DFS) — graph/traversal algorithm that explores as deep as possible along each branch.  
+- Breadth-first search (BFS) — level-order graph traversal that finds shortest paths in unweighted graphs.  
+- Dijkstra’s algorithm — single-source shortest paths for non-negative weighted graphs.  
+- Bellman-Ford algorithm — single-source shortest paths that handles negative weights and detects negative cycles.  
+- A* search — informed shortest-path search using a heuristic to guide exploration.  
+- Floyd–Warshall algorithm — all-pairs shortest paths via dynamic programming on weighted graphs.  
+- Prim’s algorithm — greedy algorithm to build a minimum spanning tree by growing a tree.  
+- Kruskal’s algorithm — greedy MST by sorting edges and using union-find to avoid cycles.  
+- Union-Find (Disjoint Set Union) — maintain dynamic connectivity with union-by-rank and path compression.  
+- Topological sort — linear ordering of DAG nodes consistent with edges (used for scheduling).  
+- Trie (prefix tree) operations — efficient prefix-based string insertion/search and autocomplete.  
+- KMP (Knuth–Morris–Pratt) — linear-time substring search using a failure function to skip comparisons.  
+- Rabin–Karp — substring search using rolling hash for fast multiple-pattern matching.  
+- Boyer–Moore — efficient substring search that skips ahead using bad-character and good-suffix heuristics.  
+- Longest Common Subsequence (LCS) — dynamic programming to find longest subsequence common to two sequences.  
+- Longest Increasing Subsequence (LIS) — find the longest increasing subsequence; O(n log n) solution uses patience sorting.  
+- 0/1 Knapsack (DP) — dynamic programming for capacity-constrained selection problems.  
+- Kadane’s algorithm — linear-time algorithm to find maximum subarray sum.  
+- Segment tree / Fenwick tree (BIT) — indexed tree structures for fast range queries and point/range updates.  
+- Priority queue (heap) operations — maintain and extract the highest/lowest priority element efficiently.  
+- LRU cache implementation (hash + doubly linked list) — O(1) cache eviction policy by recency.  
+- Fisher–Yates shuffle — unbiased in-place array shuffling in O(n).  
+- Fast Fourier Transform (FFT) — converts convolution/multiplication problems into frequency domain for fast polynomial multiply.  
+- Reservoir sampling — uniformly sample k items from a stream of unknown size.  
+
+Use this list as a checklist for interview prep and practical system design; implement and analyze a subset deeply depending on job focus (backend, systems, ML, etc.).
