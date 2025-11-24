@@ -1,0 +1,85 @@
+# AI Interview Glossary (one-line descriptions)
+
+- Supervised learning — Learning a mapping from inputs to labels using labeled training data.
+- Unsupervised learning — Discovering patterns or structure from unlabeled data.
+- Semi-supervised learning — Combining a small amount of labeled data with large unlabeled data to improve learning.
+- Reinforcement learning — Learning policies to maximize cumulative reward through trial and error in an environment.
+- Dataset — A structured collection of input-output examples used to train or evaluate models.
+- Feature engineering — Creating or transforming input variables to improve model performance.
+- Feature selection — Choosing a subset of relevant features to reduce complexity and overfitting.
+- Label — The ground-truth output or target in supervised learning.
+- Training set — The subset of data used to fit model parameters.
+- Validation set — Data used to tune hyperparameters and prevent overfitting.
+- Test set — Held-out data used to assess final model generalization.
+- Cross-validation — A procedure to estimate model performance by partitioning data into multiple train/validation splits.
+- Overfitting — When a model learns noise or idiosyncrasies of training data and fails to generalize.
+- Underfitting — When a model is too simple to capture underlying patterns in the data.
+- Bias-variance tradeoff — The balance between model complexity (variance) and systematic error (bias).
+- Regularization (L1/L2) — Penalizing large model weights to reduce overfitting and improve generalization.
+- Early stopping — Halting training when validation performance stops improving to prevent overfitting.
+- Gradient descent — Iterative optimization algorithm that updates parameters by descending the gradient of a loss.
+- Stochastic gradient descent (SGD) — Gradient descent variant using mini-batches for faster, noisier updates.
+- Optimizer (Adam, RMSprop) — Algorithms that adapt learning rate and momentum to accelerate training convergence.
+- Learning rate — A hyperparameter controlling the step size in parameter updates during optimization.
+- Loss function (objective) — A function measuring the discrepancy between predictions and targets used to guide training.
+- Mean Squared Error (MSE) — Common regression loss measuring average squared prediction error.
+- Cross-entropy loss — Common classification loss measuring distance between predicted probabilities and true labels.
+- Activation function (ReLU, sigmoid, tanh) — Nonlinear functions applied to neuron outputs enabling neural networks to learn complex mappings.
+- Neural network (NN) — Composed of layers of interconnected neurons that transform inputs to outputs via learnable weights.
+- Perceptron / MLP — Basic single-layer or multi-layer feedforward neural network architectures.
+- Convolutional Neural Network (CNN) — Architecture using convolutional layers, excels in spatial data like images.
+- Recurrent Neural Network (RNN) — Network type for sequential data that maintains hidden state across time steps.
+- LSTM / GRU — RNN variants designed to mitigate vanishing gradients and capture longer-range dependencies.
+- Transformer — Attention-based architecture that models global dependencies in sequences without recurrence.
+- Attention mechanism — Weights the importance of different input elements for each output element.
+- Embedding — Dense vector representation of categorical items (words, tokens, IDs) capturing semantic similarity.
+- Backpropagation — Algorithm for computing gradients of the loss with respect to neural network parameters.
+- Batch normalization — Technique to normalize layer inputs, stabilizing and speeding up training.
+- Dropout — Randomly dropping units during training to reduce co-adaptation and overfitting.
+- Transfer learning — Reusing a pretrained model (or parts) on a new related task to speed training and improve performance.
+- Fine-tuning — Further training a pretrained model on a target dataset to adapt its parameters.
+- Data augmentation — Generating modified versions of data (e.g., crops, flips) to increase effective dataset size.
+- Ensemble learning — Combining multiple models (bagging, boosting, stacking) to improve robustness and accuracy.
+- Random Forest — An ensemble of decision trees using bagging and feature randomness for better generalization.
+  - Bootstrap aggregating (bagging) — Training multiple models on different data subsets and averaging predictions.
+  - Out-of-bag (OOB) error — An internal validation method for bagged models using unused samples in each bootstrap.
+  - Random Feature Selection — Randomly selecting subsets of features for each tree in ensemble methods to reduce correlation.
+- Gradient Boosting (XGBoost, LightGBM) — Sequential tree-based boosting algorithms that minimize loss by fitting residuals.
+- Support Vector Machine (SVM) — Classification algorithm that finds the maximum-margin hyperplane to separate classes.
+- k-Nearest Neighbors (k-NN) — Instance-based method that predicts based on labels of closest training examples.
+- K-means clustering — Partitioning data into k clusters by minimizing within-cluster variance.
+- Hierarchical clustering — Building nested clusters by iterative merging or splitting.
+- Gaussian Mixture Model (GMM) — Probabilistic clustering representing data as a mixture of Gaussian distributions.
+- Principal Component Analysis (PCA) — Linear dimensionality reduction that projects data onto orthogonal axes of maximum variance.
+- t-SNE / UMAP — Nonlinear dimensionality reduction methods for visualizing high-dimensional data in 2D/3D.
+- Autoencoder — Neural network trained to reconstruct input, used for dimensionality reduction or anomaly detection.
+- Generative Adversarial Network (GAN) — Two-network framework where a generator creates samples and a discriminator distinguishes real from fake.
+- Variational Autoencoder (VAE) — Probabilistic autoencoder that learns a continuous latent distribution for generative modeling.
+- Probability and Bayes’ theorem — Foundational concepts for probabilistic modeling and Bayesian inference.
+- Maximum Likelihood Estimation (MLE) — Parameter estimation by maximizing the likelihood of observed data.
+- Expectation-Maximization (EM) — Iterative method for MLE in models with latent variables.
+- Markov Decision Process (MDP) — Formalism for reinforcement learning defining states, actions, transitions, and rewards.
+- Policy — A mapping from states (or observations) to actions in reinforcement learning.
+- Value function — Expected cumulative reward from a state (or state-action pair) under a policy.
+- Q-learning — Off-policy RL algorithm that learns action-value (Q) function to derive optimal policy.
+- Deep Q-Network (DQN) — Q-learning using neural networks with experience replay and target networks.
+- Policy gradient — RL methods that directly optimize the policy by estimating gradients of expected reward.
+- Actor-Critic — Hybrid RL architecture where an actor updates the policy and a critic estimates the value function.
+- Temporal Difference (TD) learning — RL methods that bootstrap value estimates from subsequent estimates rather than waiting for episode end.
+- Monte Carlo methods — RL methods that use full-episode returns to update value estimates without bootstrapping.
+- Exploration vs. exploitation — The tradeoff in RL between trying unknown actions and exploiting known rewarding actions.
+- Reward shaping — Modifying reward signals to accelerate learning while preserving optimal policies.
+- Model-based vs. model-free RL — Model-based methods learn a model of transitions; model-free learn policies or values directly.
+- Bellman equation — Recursive relationship defining value functions central to dynamic programming and RL.
+- Experience replay — Buffering past transitions to break correlations and stabilize RL training.
+- Sample efficiency — How effectively an algorithm learns from limited environment interactions.
+- Convergence — Property that training eventually reaches a stable solution or policy.
+- Evaluation metrics (accuracy, precision, recall, F1, AUC) — Standard measures to assess model performance depending on task and costs.
+- Confusion matrix — Tabular summary of true vs. predicted classes useful for computing classification metrics.
+- Model interpretability / explainability — Techniques to understand model decisions (SHAP, LIME, saliency maps).
+- Bias and fairness in ML — Awareness and mitigation of algorithmic bias and disparate impact in models.
+- MLOps / model deployment — Practices and tools for packaging, serving, monitoring, and maintaining models in production.
+- Inference latency and throughput — Performance characteristics relevant for serving models under real-time constraints.
+- Monitoring and drift detection — Tracking model performance and detecting distributional changes in production data.
+
+(Note: memorize concepts, tradeoffs, typical algorithms, and evaluation strategies; be ready to discuss math, complexity, and practical deployment considerations.)
